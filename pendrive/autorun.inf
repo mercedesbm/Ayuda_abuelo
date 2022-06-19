@@ -1,0 +1,3 @@
+[AutoRun]
+OPEN=STARTDOC.EXE setup.bat
+LABEL=SOS_Abuelo

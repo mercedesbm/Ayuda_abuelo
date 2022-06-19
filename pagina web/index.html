@@ -1,0 +1,356 @@
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda Abuelo</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function actual() {
+          fecha=new Date(); //Actualizar fecha.
+          hora=fecha.getHours(); //hora actual
+          minuto=fecha.getMinutes(); //minuto actual
+          segundo=fecha.getSeconds(); //segundo actual
+          if (hora<10) { //dos cifras para la hora
+             hora="0"+hora;
+             }
+          if (minuto<10) { //dos cifras para el minuto
+             minuto="0"+minuto;
+             }
+          if (segundo<10) { //dos cifras para el segundo
+             segundo="0"+segundo;
+             }
+          //ver en el recuadro del reloj:
+          mireloj = hora+" : "+minuto+" : "+segundo;	
+                  return mireloj; 
+          }
+ function actualizar() { //función del temporizador
+    mihora=actual(); //recoger hora actual
+    mireloj=document.getElementById("reloj"); //buscar elemento reloj
+    mireloj.innerHTML=mihora; //incluir hora en elemento
+      }
+ setInterval(actualizar,1000); //iniciar temporizador
+ 
+     
+    </script>
+<style>
+     body{
+         width: auto;
+        height: 1000px;
+        margin-top: 300px;
+        margin-left: 0;
+        padding: 0px;
+        font-family: Helvetica;
+        overflow-y: auto;
+        background-image: url(./fondo1.jpg);
+        background-position: left;
+        background-size:cover
+ }
+.header{
+ width: 1600px;
+ max-width: 1600px;
+ position: fixed;
+ margin-top: -1px;
+ padding-top: -1px;
+}
+.cabeza{
+background-color: rgb(24, 136, 156);
+padding: 47px;
+font: bold Helvetica;
+color:rgb(226, 255, 254);
+font-size: 40px;
+margin-top: -300px;
+margin-left: -1px;
+margin-right: -1px;
+border-bottom: solid rgb(19, 76, 87);
+}
+.reloj{
+ width: 300px; 
+ height: 40px; 
+ padding: 5px 0px; 
+ color:aliceblue; 
+ font: bold 2.5em Helvetica; 
+ text-align: center;
+ float: left; 
+ margin-top: -100px;
+ margin-left: 1100px;
+}
+
+.cabeza > a{
+font-family: Helvetica;
+color:rgb(226, 255, 254);
+padding-left: 60px;
+text-decoration: none;
+font-size: 80px;
+
+}
+.logo{
+width: 125px;
+margin: -230px 350px;
+padding-bottom: 20px;
+}
+
+.menu{
+ padding-left: 1160px;
+ margin-top: -3px;
+ 
+}
+.dropbtn {
+ background-color:  rgb(24, 136, 156);
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ font-family: 'Verdana';
+ border: solid rgb(19, 76, 87);
+ border-top: none;
+}
+
+.dropdown {
+ position: fixed;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: rgb(123, 187, 196);
+ min-width: 200px;
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ font-family: 'Verdana';
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color:  rgba(16, 135, 151, 0.952);}
+
+.boton {
+background-color:rgba(59, 152, 168, 0.76);
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+margin-left: 50px;
+margin-top: 120px;
+
+}
+
+.boton:hover {
+background-color:rgb(83, 177, 179);
+color:rgb(19, 76, 87);
+}
+
+.bloque1{
+display: fixed;
+ padding: 20px;
+ background-color: rgb(24, 136, 156);
+ color: rgb(215, 248, 250);
+ width: 450px;
+ height: 500px;
+ margin-top: -700px;
+ margin-left: 10px;
+ font-family: Helvetica;
+ font-size: 20px;
+ border-radius: 10%;
+ border-top: solid rgb(19, 76, 87);
+ border-bottom: solid rgb(19, 76, 87);
+ display: block;
+}
+  
+
+.bloque2{
+    margin: auto;
+    margin-left: 525px;
+    display: table;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    
+
+ background-color: rgb(24, 136, 156);
+ border-bottom: solid rgb(19, 76, 87);
+ border-top: solid rgb(19, 76, 87);
+ color: rgb(255, 255, 255);
+ font-family: Helvetica;
+ font-size: 23px;
+ text-align: center;
+ border-radius: 5%;
+ width: 350px;
+ height: 200px;
+
+}
+.bloque2:hover{
+    background-color:rgb(83, 177, 179);
+    color:rgb(19, 76, 87);
+   border-bottom: solid rgb(19, 76, 87);
+    border-top: solid rgb(19, 76, 87);
+}
+
+
+.bloque3{
+    margin-left: 550px;
+    margin-right: 70px;
+    display: table;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: -292px;
+    background-color: rgb(24, 136, 156);
+    border-bottom: solid rgb(19, 76, 87);
+    border-top: solid rgb(19, 76, 87);
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 200px;
+    margin-left: 950px;
+    font-family: Helvetica;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 5%;
+
+}
+.bloque3:hover{
+    background-color:rgb(83, 177, 179);
+    color:rgb(19, 76, 87);
+   border-bottom: solid rgb(19, 76, 87);
+    border-top: solid rgb(19, 76, 87);
+}
+.bloque4{
+display:table;
+margin-top: 50px;
+
+ padding: 20px 30px;
+
+
+ background-color: rgb(24, 136, 156);
+ border-bottom: solid rgb(19, 76, 87);
+ border-top: solid rgb(19, 76, 87);
+ color: rgb(255, 255, 255);
+ margin-left: 950px;
+ font-family: Helvetica;
+ font-size: 23px;
+ text-align: center;
+ border-radius: 5%;
+ text-decoration: none;
+ width: 350px;
+ height: 200px;
+
+
+}
+.bloque4:hover{
+    background-color:rgb(83, 177, 179);
+    color:rgb(19, 76, 87);
+   border-bottom: solid rgb(19, 76, 87);
+    border-top: solid rgb(19, 76, 87);
+}
+.bloque5{
+    margin: auto;
+    margin-left: 525px;
+    display: table;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    margin-top: -300px;
+    text-decoration: none;
+    
+
+ background-color: rgb(24, 136, 156);
+ border-bottom: solid rgb(19, 76, 87);
+ border-top: solid rgb(19, 76, 87);
+ color: rgb(255, 255, 255);
+ font-family: Helvetica;
+ font-size: 23px;
+ text-align: center;
+ border-radius: 5%;
+ width: 350px;
+ height: 200px;
+}
+.bloque5:hover{
+    background-color:rgb(83, 177, 179);
+    color:rgb(19, 76, 87);
+   border-bottom: solid rgb(19, 76, 87);
+    border-top: solid rgb(19, 76, 87);
+}
+aside p{
+    text-align:left;
+}
+
+</style>
+ 
+</head>
+<body>
+    <div class="header">
+    <div class="cabeza">
+        <a href="http://www.ayuda.abuelo.tk">Ayuda abuelo</a>
+    </div>
+    <div id="reloj" class="reloj">00 : 00 : 00
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <button class="dropbtn">Menú Desplegable </button>
+            <div class="dropdown-content">
+                     
+                <a href="./tutorial1.html">Correo electrónico</a>
+                <a href="./tutorial2.html">Facebook</a>
+                <a href="./tutorial3.html">Twitter</a>
+                <a href="./tutorial4.html">Whatsapp</a>
+                
+                </div>
+            </div>
+    </div>   
+    <div class="logo">     
+    <img class="logo" src="logo-blanco.png"></div>
+    </div>
+    <div class="bloques">
+    <a class="bloque2" target="_blank" href="./tutorial1.html">
+        <b>Cuenta de Correo Electrónico<p style="text-align:left ;"></b>
+            Aqui aprenderás a:<br>
+            1. Crear una cuenta de correo electrónico<br>
+            2. Iniciar sesión con tu cuenta de correo<br>
+            3. Mandar un correo electrónico<br>
+            4. Leer un correo electrónico</p></a>
+    <a class="bloque3" target="_blank" href="./tutorial2.html">
+        <b>Facebook</b><p style="text-align:left ;">
+        Aqui aprenderás a:<br>
+        1. Crear una cuenta en Facebook<br>
+        2. Iniciar sesión con tu cuenta<br>
+        3. Búsqueda de amistades y conocidos<br>
+        4. Postear un mensaje con imagen</p></a>
+    <a class="bloque4" target="_blank" href="./tutorial3.html">
+        <b>Twitter</b><br><p style="text-align:left ;">
+            Aqui aprenderás a:<br>
+            1. Crear una cuenta en Twitter<br>
+            2. Iniciar sesión con tu cuenta<br>
+            3. Búsqueda de amistades y conocidos<br>
+            4. Postear un mensaje con imagen</p></a>
+
+     <a class="bloque5" target="_blank" href="./tutorial4.html">
+      <b>Whatsapp</b><br><p style="text-align:left ;">
+        Aqui aprenderás a:<br>
+        1. Descarga e instalación de Whatsapp<br>
+        2. Ver contactos de Whatsapp<br>
+        3. Mandar textos y contenido multimedia<br>
+        4. Grupos de Whatsapp<br>
+        5. Hacer videollamadas</p></a>
+        
+                
+    </div>
+</body>
+<aside>
+    <div class="bloque1">
+    <h1>¡Bienvenido/a a Ayuda Abuelo!<br> </h1>
+    <a>La página donde te guiará paso a paso como desenvolverte en nociones basicas de la informática para día a día.<br>
+    Desde cuentas de correo electrónico del ámbito social y laboral, pasando por páginas web de ócio social y audiovisual, como aplicaciones móviles de comunicación personal y empresarial.<br>
+    Si tienes cualquier duda, escribe a <br><b></b>abueloayuda@gmail.com</b> <br><br>
+    Si no sabes como enviar un correo electrónico, empieza con este tutorial y entra en materia:<br>
+    <br><a class="boton" href="./tutorial1.html">Tutorial de correo electrónico</a></a>
+    </div>
+
+        
+    
+</aside>
+

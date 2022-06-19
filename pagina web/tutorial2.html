@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1">
+    <title>Tutorial 2: Redes Sociales I - Facebook</title>
+    <link rel="icon" href="logo.png">
+<script>
+        function actual() {
+          fecha=new Date(); //Actualizar fecha.
+          hora=fecha.getHours(); //hora actual
+          minuto=fecha.getMinutes(); //minuto actual
+          segundo=fecha.getSeconds(); //segundo actual
+          if (hora<10) { //dos cifras para la hora
+             hora="0"+hora;
+             }
+          if (minuto<10) { //dos cifras para el minuto
+             minuto="0"+minuto;
+             }
+          if (segundo<10) { //dos cifras para el segundo
+             segundo="0"+segundo;
+             }
+          //ver en el recuadro del reloj:
+          mireloj = hora+" : "+minuto+" : "+segundo;	
+                  return mireloj; 
+          }
+ function actualizar() { //función del temporizador
+    mihora=actual(); //recoger hora actual
+    mireloj=document.getElementById("reloj"); //buscar elemento reloj
+    mireloj.innerHTML=mihora; //incluir hora en elemento
+      }
+ setInterval(actualizar,1000); //iniciar temporizador
+ 
+     
+    </script>
+ <style>
+     body{
+        width: auto;
+        height: 1000px;
+         background-image: url(./fondo1.jpg);
+         background-position: left;
+         background-size:cover;
+         margin: 1px;
+         padding: 0px;
+         font-family: Helvetica;
+         overflow-y: auto;
+         }
+     .header{
+        width: 1600px;
+        max-width: 1600px;
+         position: fixed;
+         margin-top: -1px;
+         padding-top: -1px;
+     }
+     .cabeza{
+     background-color: rgb(24, 136, 156);
+     padding: 47px;
+     font: bold Helvetica;
+     color:rgb(226, 255, 254);
+     font-size: 40px;
+     margin-top: -200px;
+     margin-left: -1px;
+     margin-right: -1px;
+     border-bottom: solid rgb(19, 76, 87);
+     }
+     .reloj{
+ 
+         width: 300px; 
+         height: 40px; 
+         padding: 5px 0px; 
+         color:aliceblue; 
+         font: bold 2.5em Helvetica; 
+         text-align: center;
+         float: left; 
+         margin-top: -100px;
+        margin-left: 1100px;  
+    }
+ 
+ .cabeza > a{
+     font-family: Helvetica;
+     color:rgb(226, 255, 254);
+     padding-left: 100px;
+     text-decoration: none;
+     font-size: 80px;
+ 
+ }
+    .logo{
+    width: 125px;
+    margin: -230px 350px;
+    padding-bottom: 20px;
+    }
+
+
+    .menu{
+    padding-left: 1160px;
+    margin-top: -3px;
+    
+    }
+    .dropbtn {
+    background-color:  rgb(24, 136, 156);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Verdana';
+    border: solid rgb(19, 76, 87);
+    border-top: none;
+    }
+     
+     .dropdown {
+         position: fixed;
+         display: inline-block;
+     }
+     
+     .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: rgb(123, 187, 196);
+         min-width: 200px;
+         z-index: 1;
+     }
+     
+     .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         font-family: Helvetica;
+     }
+     
+     .dropdown-content a:hover {background-color: white;}
+     .dropdown:hover .dropdown-content {display: block;}
+     .dropdown:hover .dropbtn {background-color:  rgba(16, 135, 151, 0.952);}
+     
+ 
+     aside{
+         padding: 12px;
+         background-color: rgb(24, 136, 156);
+         color: rgb(215, 248, 250);
+         width: 300px;
+         height: 270px;
+         position: fixed;
+         margin-top: 5px;
+         margin-left: 10px;
+         font-family: Helvetica;
+         font-size: 15px;
+         border-radius: 10%;
+ 
+         
+     }
+     .aside a{
+         color:rgb(24, 136, 156);
+         display: none;
+         position: fixed;
+         z-index: 1;
+         text-decoration: none;
+         border:none;
+     }
+     .ole {
+        background-color:rgba(59, 152, 168, 0.76);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-left: 25%;
+     
+     }
+ 
+     .ole:hover {
+     background-color:rgb(11, 80, 97);
+     }
+    .aside2{
+        padding: 12px;
+        background-color: rgb(24, 136, 156);
+        color: rgb(215, 248, 250);
+        width: 300px;
+        height: 170px;
+        position: fixed;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-family: Helvetica;
+        font-size: 15px;
+        border-radius: 10%;
+         margin-top: 310px;
+         padding-bottom: -100px;
+         font-size: large;
+     }
+
+    object{
+     padding-top: 10px;
+     padding-left: 20px;
+     
+     width: 850px ;
+     height:630px;
+     padding-bottom: 1px;
+     
+    }
+    .cuerpo{
+        margin-left: 400px;
+        margin-top: 170px;
+        margin-right: 100px;
+    }
+
+    .cuerpo h1{
+        color: rgb(8, 99, 115);
+        font-family: Helvetica;
+        padding-left: 10%;
+        font-size: 40px;
+    }
+
+ 
+    footer{
+
+        bottom: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-left: 0px;
+
+        margin-top: 300px;
+        background-color: rgb(24, 136, 156);
+        line-height: 0.005px;
+        padding: 0.1px 80px;
+        font-size: 10px;
+        color: azure;
+        font-family: Helvetica;
+
+
+    }
+
+     </style>
+ </head>
+ 
+ 
+ <body>
+     <div class="body">
+         <nav>
+             <div class="header">
+                 
+             <div class="cabeza">
+                 <a href="http://www.ayuda.abuelo.tk">Ayuda abuelo</a>
+             </div>
+             <div id="reloj" class="reloj">00 : 00 : 00
+             </div>
+             <div class="menu">
+                 <div class="dropdown">
+                     <button class="dropbtn">Menú Desplegable </button>
+                     <div class="dropdown-content">
+                     
+                        <a href="./tutorial1.html">Correo electrónico</a>
+                        <a href="./tutorial2.html">Facebook</a>
+                        <a href="./tutorial3.html">Twitter</a>
+                        <a href="./tutorial4.html">Whatsapp</a>
+                     </div>
+                 </div>
+             </div>   
+             <div class="logo">     
+             <img class="logo" src="logo-blanco.png"></div>
+             </div>
+         </nav>
+ 
+     <aside class="aside1">
+         <div>
+             <table>
+                 <tr><b>¡Bienvenido! Estas en el tutorial sobre Facebook</b></tr>  
+                     <tr><td>Aqui aprenderás a:</td></tr>
+                     <tr><td>1. Crear una cuenta en Facebook</td></tr>
+                     <tr><td>2. Iniciar sesión con tu cuenta</td></tr>
+                     <tr><td>3. Búsqueda de amistades y conocidos</td></tr>
+                     <tr><td>4. Postear un mensaje con imagen</td></tr><br>
+             </table><br>
+                    <p> Para volver a la pagina principal pulse el botón de abajo  </p>   
+                    <a class="ole" href="./index.html">Menu principal</a>
+ 
+         </div>
+     </aside>
+     <aside class="aside2">
+         <p><b>Si quieres leer el documento a pantalla completa, pulse el el boton de abajo:</p></b><br>
+         <a target="_blank" class="ole" href="./tutorial_facebook.pdf">Tutorial en grande</a>
+ 
+     </aside>
+     <div class="cuerpo">
+         <h1>Redes Sociales I: Facebook</h1>
+         <p>Recuerda que puedes descargarte este tutorial si lo necesitas, dandole a  <img src="./download.jpg"></img> del borde y a "Guardar como"</p>
+         <div class="pdf">
+         <object data="./tutorial_facebook.pdf" type="application/pdf">           
+             </object>
+             </div>
+     </div>
+ </body>
+
+ <footer>
+    <p>© Proyecto Integrado <b>Ayuda Abuelo</b> by <b>Mercedes Barea Morales </b></p><br>
+    <p>I.E.S. Francisco Romero Vargas 2022</p>
+</footer>
+</html>
